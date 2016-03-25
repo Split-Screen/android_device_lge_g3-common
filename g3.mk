@@ -186,9 +186,6 @@ PRODUCT_PACKAGES += \
     init.sensors.sh \
     ueventd.g3.rc
 
-PRODUCT_COPY_FILES += \
-    device/lge/g3-common/twrp.fstab:recovery/root/etc/twrp.fstab
-
 # RIL symbols
 PRODUCT_PACKAGES += \
     liblge
@@ -209,3 +206,6 @@ PRODUCT_PACKAGES += \
 # Doze mode
 PRODUCT_PACKAGES += \
     G3Doze
+
+# Inherit TWRP configs
+$(call inherit-product, device/lge/g3-common/recovery/twrp.mk)

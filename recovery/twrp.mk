@@ -1,7 +1,8 @@
-# Touch-to-Wake
-PRODUCT_PACKAGES += \
-	init.recovery.touchtowake.rc
+LOCAL_PATH := device/lge/g3-common/recovery
 
-# G3
+# Fstab
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
+
+# Touch To Wake
 PRODUCT_PACKAGES += \
-        init.recovery.g3.rc
+    init.recovery.touchtowake.rc
