@@ -202,9 +202,5 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
-# Doze mode
-PRODUCT_PACKAGES += \
-    G3Doze
-
 # Inherit TWRP configs
 $(call inherit-product, device/lge/g3-common/recovery/twrp.mk)
