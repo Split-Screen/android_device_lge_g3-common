@@ -104,6 +104,10 @@ PRODUCT_PACKAGES += \
     memtrack.msm8974 \
     liboverlay
 
+# Gello
+PRODUCT_PACKAGES += \
+    Gello
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8974
