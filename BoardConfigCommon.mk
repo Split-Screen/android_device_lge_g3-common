@@ -138,17 +138,11 @@ TW_BRIGHTNESS_PATH := "/sys/devices/mdp.0/qcom\x2cmdss_fb_primary.175/leds/lcd-b
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 175
 TW_EXCLUDE_SUPERSU := true
-TW_EXTRA_LANGUAGES := true
-TW_INCLUDE_FUSE_EXFAT := true
-TW_INCLUDE_JPEG := true
-TW_INCLUDE_NTFS_3G := true
 TW_FLASH_FROM_STORAGE := true
 TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_L_CRYPTO := true
 TW_NO_SCREEN_BLANK := true
-TWHAVE_SELINUX := true
-TWRP_INCLUDE_LOGCAT := true
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
